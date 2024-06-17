@@ -11,4 +11,8 @@ class Settings:
 
     DATABASE_URL:str = os.getenv("DATABASE_URL")
 
+    SECRET_KEY:str = os.getenv("SECRET_KEY")
+    ALGORITHM:str = "HS256"
+    ACCESS_TOKEN_EXPIRE_MINUTE: int = 30
+
 settings = Settings()
