@@ -15,7 +15,7 @@ def configure_staticfiles(app:FastAPI):
 def start_application():
       app = FastAPI(title=settings.PROJECT_TITLE, version=settings.PROJECT_VERSION)      
       include_route(app)
-      configure_staticfiles(app)
+      #configure_staticfiles(app)
       return app
 
 app = start_application()
